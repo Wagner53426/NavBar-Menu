@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navabar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">Menu</span>
+        </button>
+        <h1 class="navbar-title">Prêmios</h1>
+        <nav class="navbar-menu">
+            <button type="button">Habilidades</button>
+            <button type="button">Prêmios</button>
+            <button type="button">Projetos</button>
+        </nav>
+    </nav>
+    <script type="text/javascript">
+        const toggleMenuOpen =
+            document.body.classList.toggle("Open");
+    </script>
+</body>
+
+</html>
